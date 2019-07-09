@@ -12,9 +12,14 @@ module.exports = {
         ['link', {
             rel: 'icon',
             href: '/favicon.ico'
+        }],
+        ['link', {
+            rel: 'manifest',
+            href: '/manifest.json'
         }]
     ],
     base: '/PersonalBlog/',
+    serviceWorker: true,
     themeConfig: {
         // sidebar: 'auto',
         // sidebar: [
@@ -70,6 +75,14 @@ module.exports = {
         editLinks: true,
         // 默认为 "Edit this page"
         editLinkText: '编辑文档',
+        // 假如文档不是放在仓库的根目录下：
+        docsDir: 'docs',
+        serviceWorker: {
+            updatePopup: {
+                massage: "内容已更新",
+                buttonText: "刷新"
+            }
+        },
         nav: [{
                 text: 'Home',
                 link: '/'
