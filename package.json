@@ -1,25 +1,31 @@
 {
-  "name": "PersonalBlog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gangking/PersonalBlog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gangking/PersonalBlog/issues"
-  },
-  "homepage": "https://github.com/gangking/PersonalBlog#readme",
-  "devDependencies": {
-    "@vuepress/plugin-pwa": "^1.0.2"
-  }
+    "name": "personalBlog",
+    "version": "1.0.0",
+    "description": "熊刚的个人博客首页，熊刚的技术作品，熊刚的生活成长",
+    "main": "index.js",
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "start": "npm run docs:dev",
+        "docs:build": "vuepress build docs",
+        "build": "npm run docs:build",
+        "deploy": "bash deploy.sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gangking/PersonalBlog.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gangking/PersonalBlog/issues"
+    },
+    "homepage": "https://github.com/gangking/PersonalBlog#readme",
+    "devDependencies": {
+        "@vuepress/plugin-pwa": "^1.0.2",
+        "sass-loader": "^7.1.0"
+    },
+    "dependencies": {
+        "node-sass": "^4.12.0"
+    }
 }

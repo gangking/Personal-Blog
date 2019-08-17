@@ -1,6 +1,6 @@
 module.exports = {
-    title: '武人熊大大',
-    description: '武人熊大大的个人博客文档，vuepress文档', // 优化SEO
+    title: 'MrXiong',
+    description: '熊刚的个人博客首页，熊刚的技术作品，熊刚的生活成长', // 优化SEO
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -18,64 +18,30 @@ module.exports = {
             href: '/manifest.json'
         }]
     ],
-    base: '/PersonalBlog/',
+    base: '/myBlog/',
     serviceWorker: true,
     themeConfig: {
-        // sidebar: 'auto',
-        // sidebar: [
-        //     ['/', '首页'],
-        //     ['/css/', 'css首页'],
-        //     ['/javascript/', 'javascript首页'],
-        //     ['/about/test', 'about首页']
-        // ],
-        // sidebar: [{
-        //         title: 'Group 1',
-        //         path: '/css/', // 路径
-        //         collapsable: true,// 是否折叠
-        //         sidebarDepth: 1,// 深度1
-        //         children: [
-        //             // '/',
-        //             '/css/',
-        //             '/css/css1'
-        //         ]
-        //     },
-        //     {
-        //         title: 'Group 2',
-        //         children: [ /* ... */ ]
-        //     }
-        // ],
         sidebar: {
-            '/css/': [
-                '', /* /css/ */
-                'css1', /* /css/css1.html */
-                'css2' /* /css/css2.html */
-            ],
-            '/javascript/': [
-                '', /* /javascript/ */
-                'javascript1', /* /javascript/javascript1.html */
-                'javascript2' /* /javascript/javascript2.html */
-            ],
-            // fallback 放在最前面，会禁止所有的IP地址访问
+            '/webpack/': getWebpackSidebar('Webpack开发', '介绍'),
+            '/react/': getReactSidebar('React开发', '介绍'),
+            '/vue/': getVueSidebar('Vue开发', '介绍'),
+            '/es6/': getEs6Sidebar('Es6语法', '介绍'),
+            '/studyNotes/': getThemeSidebar('前端开发', '介绍'),
+            '/node/': getNodeSidebar('后端及实用技术', '介绍'),
+            '/about/': getMySelfSidebar('自我修养', '目录'),
+            '/social/': getSocialSidebar('社交媒体', '介绍'),
+            '/itemBank/': getItemBankSidebar('题库', '介绍'),
             '/': [
-                '', /* / */
-                '/about/', /* /about.html */
-                '/about/test', /* /about/test.html */
+                '',
+                '/about/',
             ]
         },
-        sidebarDepth: 2,
-        displayAllHeaders: true, // 显示所有页面标题链接
-        activeHeaderLinks: false, // 禁用活动标题
-        lastUpdated: '上次更新', // string | boolean 将以合适的日期格式显示在每一页的底部
-        // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-        repo: 'gangking/PersonalBlog',
-        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
-        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        activeHeaderLinks: true,
+        lastUpdated: '上次更新',
+        repo: 'gangking/myBlog',
         repoLabel: '查看源码',
-        // 默认是 false, 设置为 true 来启用
         editLinks: true,
-        // 默认为 "Edit this page"
         editLinkText: '编辑文档',
-        // 假如文档不是放在仓库的根目录下：
         docsDir: 'docs',
         serviceWorker: {
             updatePopup: {
@@ -84,39 +50,172 @@ module.exports = {
             }
         },
         nav: [{
-                text: 'Home',
-                link: '/'
-            },
-            {
-                text: 'Guide',
-                items: [{
-                    text: '亚洲',
-                    items: [{
-                            text: 'Chinese',
-                            link: '/language/chinese'
-                        },
-                        {
-                            text: 'Japanese',
-                            link: '/language/japanese'
-                        }
-                    ]
-                }]
-            },
-            {
-                text: 'External',
-                link: 'https://google.com'
-            }, {
-                text: 'Languages',
-                items: [{
-                        text: 'Chinese',
-                        link: '/language/chinese'
-                    },
-                    {
-                        text: 'Japanese',
-                        link: '/language/japanese'
-                    }
-                ]
-            }
+            text: '首页',
+            link: '/'
+        },
+        {
+            text: '前端技术',
+            // link: '/studyNotes/'
+            items: [
+                {
+                    text: 'Webpack',
+                    link: '/webpack/'
+                },
+                {
+                    text: 'React',
+                    link: '/react/'
+                },
+                {
+                    text: 'Vue',
+                    link: '/vue/'
+                },
+                {
+                    text: 'ES6',
+                    link: '/es6/'
+                }
+
+            ]
+        },
+        {
+            text: '后端及实用技术',
+            link: '/node/'
+        },
+        {
+            text: '题库',
+            link: '/ItemBank/'
+        },
+        {
+            text: '社交媒体',
+            link: '/social/'
+        },
+        {
+            text: '生活与创作',
+            link: '/about/'
+        }
         ]
     }
+}
+
+function getItemBankSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            ['Vue', 'Vue题库'],
+            ['comprehensive', '综合题库']
+        ]
+    },]
+}
+
+function getSocialSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            ['csdn', 'CSDN']
+        ]
+    },]
+}
+
+function getNodeSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            ['nodeJs', 'NodeJs'],
+            ['CodeManagement', '代码管理工具'],
+            ['Xss', '防Xss'],
+            ['mobileAdaptation', '移动端适配'],
+        ]
+    },]
+}
+
+function getThemeSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            'Webpack',
+            'React',
+            'Vue'
+        ]
+    },]
+}
+
+function getWebpackSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            '01'
+        ]
+    },]
+}
+
+function getEs6Sidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            '01'
+        ]
+    },]
+}
+
+function getVueSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            ['01', '3.0开发项目'],
+            ['02', '项目开发心得'],
+            ['03', 'Vue源码']
+
+
+        ]
+    },]
+}
+
+function getReactSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            ['01', 'React基础'],
+            ['02', 'React慕课笔记'],
+            ['03', '简书项目'],
+            ['04', '项目心得']
+        ]
+    },]
+}
+
+function getMySelfSidebar (groupA, introductionA) {
+    return [{
+        title: groupA,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+            ['', introductionA],
+            ['01', '自命不凡，却无足轻重'],
+            ['02', '前端专业方向的尽头'],
+            ['03', '学不进去，没时间学怎么办？'],
+            ['04', '滤镜与混合模式'],
+        ]
+    },]
 }
