@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue项目 | MrXiong</title>
+    <meta name="description" content="熊刚的个人博客首页，熊刚的技术作品，熊刚的生活成长">
+    <link rel="icon" href="/PersonalBlog/favicon.ico">
+  <link rel="manifest" href="/PersonalBlog/manifest.json">
+    
+    <link rel="preload" href="/PersonalBlog/assets/css/0.styles.ff701fc9.css" as="style"><link rel="preload" href="/PersonalBlog/assets/js/app.9b43270b.js" as="script"><link rel="preload" href="/PersonalBlog/assets/js/2.c03f67b8.js" as="script"><link rel="preload" href="/PersonalBlog/assets/js/35.181ad55d.js" as="script"><link rel="prefetch" href="/PersonalBlog/assets/js/10.4ab46d4c.js"><link rel="prefetch" href="/PersonalBlog/assets/js/11.6ed93ee9.js"><link rel="prefetch" href="/PersonalBlog/assets/js/12.c2a1f8a6.js"><link rel="prefetch" href="/PersonalBlog/assets/js/13.8288193b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/14.952ed0f9.js"><link rel="prefetch" href="/PersonalBlog/assets/js/15.c67c2b45.js"><link rel="prefetch" href="/PersonalBlog/assets/js/16.e40330be.js"><link rel="prefetch" href="/PersonalBlog/assets/js/17.520de7e9.js"><link rel="prefetch" href="/PersonalBlog/assets/js/18.64ad1c50.js"><link rel="prefetch" href="/PersonalBlog/assets/js/19.fead75c9.js"><link rel="prefetch" href="/PersonalBlog/assets/js/20.fe0ba9a6.js"><link rel="prefetch" href="/PersonalBlog/assets/js/21.ca26c21b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/22.0463496c.js"><link rel="prefetch" href="/PersonalBlog/assets/js/23.5e5f37fc.js"><link rel="prefetch" href="/PersonalBlog/assets/js/24.ac402be2.js"><link rel="prefetch" href="/PersonalBlog/assets/js/25.dfe8444b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/26.dfdadbe3.js"><link rel="prefetch" href="/PersonalBlog/assets/js/27.3aec9ce3.js"><link rel="prefetch" href="/PersonalBlog/assets/js/28.1e47c27f.js"><link rel="prefetch" href="/PersonalBlog/assets/js/29.56f33405.js"><link rel="prefetch" href="/PersonalBlog/assets/js/3.0f742e16.js"><link rel="prefetch" href="/PersonalBlog/assets/js/30.ec63d3db.js"><link rel="prefetch" href="/PersonalBlog/assets/js/31.dc6b061f.js"><link rel="prefetch" href="/PersonalBlog/assets/js/32.a859d198.js"><link rel="prefetch" href="/PersonalBlog/assets/js/33.1851770b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/34.97e2a1eb.js"><link rel="prefetch" href="/PersonalBlog/assets/js/36.d6454e0b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/37.b9b5e16b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/38.3b2fab6a.js"><link rel="prefetch" href="/PersonalBlog/assets/js/39.d18e059b.js"><link rel="prefetch" href="/PersonalBlog/assets/js/4.7c7971e1.js"><link rel="prefetch" href="/PersonalBlog/assets/js/40.3aacfb2f.js"><link rel="prefetch" href="/PersonalBlog/assets/js/5.463c2d90.js"><link rel="prefetch" href="/PersonalBlog/assets/js/6.43a2a5a9.js"><link rel="prefetch" href="/PersonalBlog/assets/js/7.192a3bb1.js"><link rel="prefetch" href="/PersonalBlog/assets/js/8.eb099a77.js"><link rel="prefetch" href="/PersonalBlog/assets/js/9.d781bfed.js">
+    <link rel="stylesheet" href="/PersonalBlog/assets/css/0.styles.ff701fc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/PersonalBlog/" class="home-link router-link-active"><!----> <span class="site-name">MrXiong</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/PersonalBlog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PersonalBlog/webpack/" class="nav-link">Webpack</a></li><li class="dropdown-item"><!----> <a href="/PersonalBlog/react/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/PersonalBlog/vue/" class="nav-link router-link-active">Vue</a></li><li class="dropdown-item"><!----> <a href="/PersonalBlog/es6/" class="nav-link">ES6</a></li></ul></div></div><div class="nav-item"><a href="/PersonalBlog/node/" class="nav-link">后端及实用技术</a></div><div class="nav-item"><a href="/PersonalBlog/ItemBank/" class="nav-link">题库</a></div><div class="nav-item"><a href="/PersonalBlog/social/" class="nav-link">社交媒体</a></div><div class="nav-item"><a href="/PersonalBlog/about/" class="nav-link">生活与创作</a></div> <a href="https://github.com/gangking/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/PersonalBlog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/PersonalBlog/webpack/" class="nav-link">Webpack</a></li><li class="dropdown-item"><!----> <a href="/PersonalBlog/react/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/PersonalBlog/vue/" class="nav-link router-link-active">Vue</a></li><li class="dropdown-item"><!----> <a href="/PersonalBlog/es6/" class="nav-link">ES6</a></li></ul></div></div><div class="nav-item"><a href="/PersonalBlog/node/" class="nav-link">后端及实用技术</a></div><div class="nav-item"><a href="/PersonalBlog/ItemBank/" class="nav-link">题库</a></div><div class="nav-item"><a href="/PersonalBlog/social/" class="nav-link">社交媒体</a></div><div class="nav-item"><a href="/PersonalBlog/about/" class="nav-link">生活与创作</a></div> <a href="https://github.com/gangking/myBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/PersonalBlog/vue/" class="sidebar-link">介绍</a></li><li><a href="/PersonalBlog/vue/01.html" class="active sidebar-link">3.0开发项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#喵喵电影" class="sidebar-link">喵喵电影</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#项目开发流程" class="sidebar-link">项目开发流程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#_1、产品立项" class="sidebar-link">1、产品立项</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#_2、产品原型" class="sidebar-link">2、产品原型</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#_3、项目开发" class="sidebar-link">3、项目开发</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#_4、项目测试" class="sidebar-link">4、项目测试</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#_5、项目上线" class="sidebar-link">5、项目上线</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#技术要点" class="sidebar-link">技术要点</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#文件目录树" class="sidebar-link">文件目录树</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#项目接口文件" class="sidebar-link">项目接口文件</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#多人协作和静态布局" class="sidebar-link">多人协作和静态布局</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#多人协作" class="sidebar-link">多人协作</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#初始化项目" class="sidebar-link">初始化项目</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#静态布局demo" class="sidebar-link">静态布局demo</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#数据接口api" class="sidebar-link">数据接口api</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#vue脚手架搭建（3-0）" class="sidebar-link">Vue脚手架搭建（3.0）</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#启动项目" class="sidebar-link">启动项目</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#创建远程仓库" class="sidebar-link">创建远程仓库</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#vue3-0脚手架小知识" class="sidebar-link">VUE3.0脚手架小知识</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#路由配置与初始化" class="sidebar-link">路由配置与初始化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#路由和数据" class="sidebar-link">路由和数据</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#views" class="sidebar-link">views</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#components" class="sidebar-link">components</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#头部组件与底部导航组件" class="sidebar-link">头部组件与底部导航组件</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#电影路由与组件拆分" class="sidebar-link">电影路由与组件拆分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#公共组件" class="sidebar-link">公共组件</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#路由" class="sidebar-link">路由</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#影院组件与登录组件" class="sidebar-link">影院组件与登录组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#影院组件" class="sidebar-link">影院组件</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#登录组件" class="sidebar-link">登录组件</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#城市组件数据渲染" class="sidebar-link">城市组件数据渲染</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#axios" class="sidebar-link">axios</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#数据渲染" class="sidebar-link">数据渲染</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#热映电影组件数据" class="sidebar-link">热映电影组件数据</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#请求数据" class="sidebar-link">请求数据</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#数据渲染-2" class="sidebar-link">数据渲染</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#搜索组件数据渲染" class="sidebar-link">搜索组件数据渲染</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#函数防抖" class="sidebar-link">函数防抖</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#影院数据渲染" class="sidebar-link">影院数据渲染</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#城市定位功能实现" class="sidebar-link">城市定位功能实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#模拟tap事件" class="sidebar-link">模拟tap事件</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#better-scroll" class="sidebar-link">better-scroll</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#封装scroll组件" class="sidebar-link">封装Scroll组件</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#封装loading组件" class="sidebar-link">封装Loading组件</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#当前城市本地存储与状态管理" class="sidebar-link">当前城市本地存储与状态管理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#本地存储" class="sidebar-link">本地存储</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#vuex状态管理" class="sidebar-link">VueX状态管理</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#点击城市" class="sidebar-link">点击城市</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#当前城市关联" class="sidebar-link">当前城市关联</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#定位当前城市" class="sidebar-link">定位当前城市</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#电影详情页组件" class="sidebar-link">电影详情页组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#基本布局" class="sidebar-link">基本布局</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#路由高级用法" class="sidebar-link">路由高级用法</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#详情页返回列表" class="sidebar-link">详情页返回列表</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#进入详情" class="sidebar-link">进入详情</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#动画效果" class="sidebar-link">动画效果</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#解决路由不匹配问题" class="sidebar-link">解决路由不匹配问题</a></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#数据渲染-3" class="sidebar-link">数据渲染</a></li></ul></li><li class="sidebar-sub-header"><a href="/PersonalBlog/vue/01.html#项目部署" class="sidebar-link">项目部署</a></li></ul></li><li><a href="/PersonalBlog/vue/02.html" class="sidebar-link">项目开发心得</a></li><li><a href="/PersonalBlog/vue/03.html" class="sidebar-link">Vue源码</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue项目"><a href="#vue项目" aria-hidden="true" class="header-anchor">#</a> Vue项目</h1> <h2 id="喵喵电影"><a href="#喵喵电影" aria-hidden="true" class="header-anchor">#</a> 喵喵电影</h2> <p><a href="http://39.97.33.178/miaomiao" target="_blank" rel="noopener noreferrer">项目预览<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://github.com/gangking/miaomiao/tree/dev" target="_blank" rel="noopener noreferrer">源码<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="项目开发流程"><a href="#项目开发流程" aria-hidden="true" class="header-anchor">#</a> 项目开发流程</h2> <h3 id="_1、产品立项"><a href="#_1、产品立项" aria-hidden="true" class="header-anchor">#</a> 1、产品立项</h3> <ul><li><p>客户需求分析</p></li> <li><p>整理需求文档</p></li> <li><p>项目成立会</p></li></ul> <h3 id="_2、产品原型"><a href="#_2、产品原型" aria-hidden="true" class="header-anchor">#</a> 2、产品原型</h3> <ul><li><p>设计产品原型图-Axure RP 工具等</p></li> <li><p>UI设计--PS工具、AI工具等</p></li></ul> <h3 id="_3、项目开发"><a href="#_3、项目开发" aria-hidden="true" class="header-anchor">#</a> 3、项目开发</h3> <ul><li><p>项目需求分析</p></li> <li><p>项目工期评估</p></li> <li><p>项目责任划分</p></li> <li><p>前端</p> <div class="language- extra-class"><pre class="language-text"><code>静态页面制作
+前端框架选型
+前端页面架构
+</code></pre></div></li> <li><p>后端</p> <div class="language- extra-class"><pre class="language-text"><code>数据库开发
+API接口文档
+API接口实现
+</code></pre></div></li></ul> <h3 id="_4、项目测试"><a href="#_4、项目测试" aria-hidden="true" class="header-anchor">#</a> 4、项目测试</h3> <ul><li>开发测试</li></ul> <div class="language- extra-class"><pre class="language-text"><code>- 单元测试
+- E2E测试
+检测项目开发问题，是否冗余臃肿
+</code></pre></div><ul><li>灰度测试</li></ul> <div class="language- extra-class"><pre class="language-text"><code>功能测试
+压力测试
+服务器测试、
+用例测试
+- 数据来源真实，环境还是测试环境不是真实的
+</code></pre></div><ul><li>线上测试</li></ul> <div class="language- extra-class"><pre class="language-text"><code>指定群体测试
+反馈搜集
+版本迭代
+- 内测，指定人群
+</code></pre></div><h3 id="_5、项目上线"><a href="#_5、项目上线" aria-hidden="true" class="header-anchor">#</a> 5、项目上线</h3> <ul><li><p>打包前端模块</p></li> <li><p>远程服务器部署</p></li> <li><p>监控异常</p></li></ul> <h2 id="技术要点"><a href="#技术要点" aria-hidden="true" class="header-anchor">#</a> 技术要点</h2> <ul><li><code>vue</code></li> <li><code>vuex</code></li> <li><code>vue-router</code></li> <li><code>better-scroll</code></li> <li><code>proxy</code></li> <li><code>axios</code></li></ul> <h2 id="文件目录树"><a href="#文件目录树" aria-hidden="true" class="header-anchor">#</a> 文件目录树</h2> <div class="language- extra-class"><pre class="language-text"><code>.
+├── README.md
+├── babel.config.js
+├── package-lock.json
+├── package.json
+├── public (存放公共文件)
+│   ├── css
+│   │   └── reset.css
+│   ├── favicon.ico
+│   ├── font (字体图表文件)
+│   │   ├── iconfont.eot
+│   │   ├── iconfont.svg
+│   │   ├── iconfont.ttf
+│   │   ├── iconfont.woff
+│   │   └── iconfont.woff2
+│   └── index.html
+├── src
+│   ├── App.vue
+│   ├── assets (存放一些图片等)
+│   │   ├── CityHall.png
+│   │   ├── lazy1.jpg
+│   │   ├── max.png
+│   │   ├── message.png
+│   │   ├── movie.jpg
+│   │   ├── movie.png
+│   │   └── personal.png
+│   ├── components(子组件)
+│   │   ├── cityIndex
+│   │   ├── footer
+│   │   ├── header
+│   │   ├── js
+│   │   ├── loading
+│   │   ├── movieIndex
+│   │   ├── personIndex
+│   │   └── scroller
+│   ├── main.js（入口文件）
+│   ├── routers (路由文件)
+│   │   ├── city
+│   │   ├── index.js
+│   │   ├── movie
+│   │   └── person
+│   ├── stores (状态管理文件)
+│   │   ├── city
+│   │   └── index.js
+│   └── views （主要示图文件）
+│       ├── city
+│       ├── movie
+│       └── person
+├── tree.md
+└── vue.config.js
+</code></pre></div><h2 id="项目接口文件"><a href="#项目接口文件" aria-hidden="true" class="header-anchor">#</a> 项目接口文件</h2> <table><thead><tr><th>接口名称</th> <th>请求方式</th> <th>请求示列</th></tr></thead> <tbody><tr><td>正在热映</td> <td>get</td> <td><a href="http://39.97.33.178/api/movieOnInfoList?cityId=10" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/movieOnInfoList?cityId=10<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>即将上映</td> <td>get</td> <td><a href="http://39.97.33.178/api/movieComingList?cityId=10" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/movieComingList?cityId=10<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>搜索</td> <td>get</td> <td><a href="http://39.97.33.178/api/searchList?cityId=10&amp;kw=a" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/searchList?cityId=10&amp;kw=a<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>城市</td> <td>get</td> <td><a href="http://39.97.33.178/api/cityList" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/cityList<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>电影详情</td> <td>get</td> <td><a href="http://39.97.33.178/api/detailmovie?movieId=345808" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/detailmovie?movieId=345808<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>影院</td> <td>get</td> <td><a href="http://39.97.33.178/api/cinemaList?cityId=10" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/cinemaList?cityId=10<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>城市定位</td> <td>get</td> <td><a href="http://39.97.33.178/api/getLocation" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/getLocation<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr></tbody></table> <h2 id="多人协作和静态布局"><a href="#多人协作和静态布局" aria-hidden="true" class="header-anchor">#</a> 多人协作和静态布局</h2> <h3 id="多人协作"><a href="#多人协作" aria-hidden="true" class="header-anchor">#</a> 多人协作</h3> <p><img src="G:%5CTestProject%5CPersonalBlog%5CmyBlog%5Cdocs%5Cstatic%5Cimg%5Cvue%5Cxiezuo.png" alt=""></p> <p>​	版本管理工具（例如：GIT），项目创建主分支，再创建开发分支，开发完成后，由项目经理将分支合并到主干；</p> <p>​	主要是避免冲突，视实际情况处理；</p> <h3 id="初始化项目"><a href="#初始化项目" aria-hidden="true" class="header-anchor">#</a> 初始化项目</h3> <h3 id="静态布局demo"><a href="#静态布局demo" aria-hidden="true" class="header-anchor">#</a> 静态布局demo</h3> <p>（非必须）</p> <h3 id="数据接口api"><a href="#数据接口api" aria-hidden="true" class="header-anchor">#</a> 数据接口api</h3> <p>（后端提供，可以根据后端接口文档写模拟数据）</p> <h3 id="vue脚手架搭建（3-0）"><a href="#vue脚手架搭建（3-0）" aria-hidden="true" class="header-anchor">#</a> Vue脚手架搭建（3.0）</h3> <p><a href="https://blog.csdn.net/xuqipeter/article/details/80452271" target="_blank" rel="noopener noreferrer">参考<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- extra-class"><pre class="language-text"><code>vue create miaomiao
+
+vue create is a Vue CLI 3 only command and you are using Vue CLI 2.9.6.
+You may want to run the following to upgrade to Vue CLI 3:
+
+npm uninstall -g vue-cli
+npm install -g @vue/cli
+注意：这种方式必须将vue-cli工具更新至3.0版本
+</code></pre></div><p><img src="G:%5CTestProject%5CPersonalBlog%5CmyBlog%5Cdocs%5Cstatic%5Cimg%5Cvue%5Cinstallvuecli.png" alt=""></p> <p>​	vue-cli 内置支持了8个功能特性，可以多选：使用方向键在特性选项之间切换，<strong>使用空格键选中当前特性</strong>，使用 a 键切换选择所有，使用 i 键翻转选项。</p> <p><img src="G:%5CTestProject%5CPersonalBlog%5CmyBlog%5Cdocs%5Cstatic%5Cimg%5Cvue%5Cinstallvuecli2.png" alt=""></p> <p>重新确认选项</p> <p><img src="G:%5CTestProject%5CPersonalBlog%5CmyBlog%5Cdocs%5Cstatic%5Cimg%5Cvue%5Cinstallvuecli3.png" alt=""></p> <h3 id="启动项目"><a href="#启动项目" aria-hidden="true" class="header-anchor">#</a> 启动项目</h3> <div class="language- extra-class"><pre class="language-text"><code>npm run server
+打包命令照旧
+</code></pre></div><p><img src="G:%5CTestProject%5CPersonalBlog%5CmyBlog%5Cdocs%5Cstatic%5Cimg%5Cvue%5Cvue3run.png" alt=""></p> <p>注意：必须处于同一网络</p> <h3 id="创建远程仓库"><a href="#创建远程仓库" aria-hidden="true" class="header-anchor">#</a> 创建远程仓库</h3> <p><a href="https://github.com/gangking/miaomiao" target="_blank" rel="noopener noreferrer">项目仓库地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>注意：</p> <ul><li><p>主分支上不要开发；</p></li> <li><p>单独创建一个开发分支；</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>例如：
+git checkout -b dev
+
+上传到开发分支
+git push origin dev
+</code></pre></div><p>​	在开发分支也需要创一个当前想要开发的分支，因为也是多人开发。</p> <h2 id="vue3-0脚手架小知识"><a href="#vue3-0脚手架小知识" aria-hidden="true" class="header-anchor">#</a> VUE3.0脚手架小知识</h2> <ol><li>静态资源图片可以转换成base64位，提交加载效率（可选）</li></ol> <h2 id="路由配置与初始化"><a href="#路由配置与初始化" aria-hidden="true" class="header-anchor">#</a> 路由配置与初始化</h2> <p>​	正式开发，在开发分支上再创建一个分支</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -b createcomponents
+</code></pre></div><h3 id="路由和数据"><a href="#路由和数据" aria-hidden="true" class="header-anchor">#</a> 路由和数据</h3> <p>​	单独通过文件夹的方式存放，同时文件中通过index.js来将所有内容导出即可，这样能减少代码量。</p> <p>​	路由的话对于大型项目而言不建议直接写在index.js下面，同样可以通过创建对应文件夹的形式分模块管理。</p> <div class="language- extra-class"><pre class="language-text"><code>++ routers
++++ index.js
++++ cinama
+++++ index.js
++++ mine
+++++ index.js
++++ movie
+++++ index.js
+
+++ stores
++++ index.js
+
+</code></pre></div><p>路由分目录下只需要暴露路由方式即可</p> <div class="language- extra-class"><pre class="language-text"><code>例如：
+export default {
+  path: '/movie',
+  component: () =&gt; import('@/views/Movie')
+}
+
+注意：
+    按需加载：component: () =&gt; import('@/views/Movie')
+	@表示src目录
+	router主文件引入：
++ import movieRouter from './movie'
+
+Vue.use(Router)
+
+export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+ +   movieRouter
+  ]
+})
+</code></pre></div><h3 id="views"><a href="#views" aria-hidden="true" class="header-anchor">#</a> views</h3> <p>安装Vetur插件scaffold，快速生成vue模板</p> <ul><li>Movie</li></ul> <div class="language- extra-class"><pre class="language-text"><code>创建index.vue
+</code></pre></div><ul><li>Chinema</li></ul> <div class="language- extra-class"><pre class="language-text"><code>创建index.vue
+</code></pre></div><ul><li>Mine</li></ul> <div class="language- extra-class"><pre class="language-text"><code>创建index.vue
+</code></pre></div><h2 id="components"><a href="#components" aria-hidden="true" class="header-anchor">#</a> components</h2> <p>引入静态资源（public目录下）</p> <p>index.html中</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,user-scalable=no&quot;&gt;
+注意：
+	user-scalable=no禁止用户在手机屏幕上缩放
+	
+网页小图标：
+&lt;link rel=&quot;icon&quot; href=&quot;&lt;%= BASE_URL %&gt;favicon.ico&quot;&gt;
+注意：
+     &lt;%= BASE_URL %&gt;表示图片路径们可以在路由中指定
+</code></pre></div><h3 id="头部组件与底部导航组件"><a href="#头部组件与底部导航组件" aria-hidden="true" class="header-anchor">#</a> 头部组件与底部导航组件</h3> <ul><li><p>Header</p></li> <li><p>TabBar</p></li> <li><p>City</p></li></ul> <p>注意：</p> <ul><li><p>替组件添加name有利于调试</p> <div class="language- extra-class"><pre class="language-text"><code>export default {
+  name: 'movie'
+}
+</code></pre></div></li> <li><p>组件创建完成之后在movie组件中引入即可使用</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div id=&quot;main&quot;&gt;
+    &lt;Header&gt;&lt;/Header&gt;
+    &lt;TabBar&gt;&lt;/TabBar&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Header from '@/components/Header'
+import TabBar from '@/components/TabBar'
+export default {
+  name: 'movie',
+  components: {
+    Header,
+    TabBar
+  }
+}
+&lt;/script&gt;
+我的（mine）和电影院(cinama)组件同理即可
+</code></pre></div></li> <li><p>路由选中改造</p> <div class="language- extra-class"><pre class="language-text"><code>App.vue
+可以用：keep-alive包裹
+	因为切换路由每次都会重新渲染，这样比较消耗内存，keep-alive包裹能起到缓存作用。
+&lt;keep-alive&gt;
+    &lt;router-view /&gt;
+&lt;/keep-alive&gt;
+
+在movie - index.js中所有的按钮用router-link改造
+例如：
+&lt;router-link tag=&quot;li&quot; to='/movie'&gt;
+   &lt;i class=&quot;iconfont icon-dianying&quot;&gt;&lt;/i&gt;
+   &lt;p&gt;电影&lt;/p&gt;
+&lt;/router-link&gt;
+
+这样只要路由匹配上了，就会默认添加router-link-active类名
+即，
+#footer ul li.router-link-active {
+  color: #f03d37;
+}
+</code></pre></div></li> <li><p>顶部文字标题联动(父子通信)</p> <div class="language- extra-class"><pre class="language-text"><code>header - index.vue
+props: {
+    title: {
+      type: String,
+      default: '喵喵电影'
+    }
+}
+</code></pre></div></li></ul> <h2 id="电影路由与组件拆分"><a href="#电影路由与组件拆分" aria-hidden="true" class="header-anchor">#</a> 电影路由与组件拆分</h2> <h3 id="公共组件"><a href="#公共组件" aria-hidden="true" class="header-anchor">#</a> 公共组件</h3> <div class="language- extra-class"><pre class="language-text"><code>城市
++ City
+++ index.vue
+
+正在热映
++ NowPlaying
+++ index.vue
+
+即将上映
++ CommiSoon
+++ index.vue
+
+搜索
++ Search
+++ index.vue
+</code></pre></div><h3 id="路由"><a href="#路由" aria-hidden="true" class="header-anchor">#</a> 路由</h3> <div class="language- extra-class"><pre class="language-text"><code>1、重定向
+例：
+routes: [
+    movieRouter,
+    cinameRouter,
+    mineRouter,
+    {
+      path: '/',
+      redirect: '/movie'
+    }
+  ]
+  2、电影下子路由
+  export default {
+  path: '/movie',
+  component: () =&gt; import('@/views/Movie'),
+  children: [
+    {
+      path: 'city',
+      component: () =&gt; import('@/components/City')
+    }
+  ]
+}
+commiSoon、nowPlaying、search同理
+空白错误：
+原因：{ import('@/components/City') }不应该加{}
+解决办法：去掉{}即可
+
+3、路由跳转
+4、重定向至正在热映
+{
+   path: '/movie',
+   redirect: '/movie/nowPlaying'
+}
+</code></pre></div><h2 id="影院组件与登录组件"><a href="#影院组件与登录组件" aria-hidden="true" class="header-anchor">#</a> 影院组件与登录组件</h2> <h3 id="影院组件"><a href="#影院组件" aria-hidden="true" class="header-anchor">#</a> 影院组件</h3> <div class="language- extra-class"><pre class="language-text"><code>components
+++ CiList
+++ index.vue
+</code></pre></div><h3 id="登录组件"><a href="#登录组件" aria-hidden="true" class="header-anchor">#</a> 登录组件</h3> <div class="language- extra-class"><pre class="language-text"><code>登录组件
+++ Login
+++ index.vue
+</code></pre></div><p>提交代码：</p> <div class="language- extra-class"><pre class="language-text"><code>1、代码提交
+git add .
+git commit -m &quot;add createcomponent&quot;
+
+2、再切换回开发分支
+git checkout dev
+
+3、分支合并
+git merge createcomponents --no-ff
+--no-ff 会将合并记录添加到git log当中
+
+4、git log
+Merge: 035d0b2 b9d9034
+Author: gangking &lt;gangking@foxmail.com&gt;
+Date:   Sat Aug 10 18:06:42 2019 +0800
+
+    Merge branch 'createcomponents' into dev
+
+commit b9d90342edf7bdaee662519e3d899e796bd72e98 (createcomponents)
+Author: gangking &lt;gangking@foxmail.com&gt;
+Date:   Sat Aug 10 18:02:34 2019 +0800
+
+    add reatecomponnet
+说明合并成功！
+
+5、提交到远程仓库
+git push origin dev
+
+6、删除分支
+git branch -d createcomponents
+
+7、查看当前分支
+git branch
+</code></pre></div><h2 id="城市组件数据渲染"><a href="#城市组件数据渲染" aria-hidden="true" class="header-anchor">#</a> 城市组件数据渲染</h2> <p>1、先创建一个新分支</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -b setData
+
+模拟数据方法：
+1、charles
+2、easy mock
+3、y-api
+</code></pre></div><table><thead><tr><th>接口名</th> <th>请求方式</th> <th>请求示例</th></tr></thead> <tbody><tr><td>城市</td> <td>get</td> <td><a href="http://39.97.33.178/api/cityList" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/cityList<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr></tbody></table> <p>反向代理解决跨域</p> <div class="language- extra-class"><pre class="language-text"><code>根目录下新建
+vue.config.js
+
+module.exports = {
+  devServer: {
+    proxy: {
+      '/api2': {
+        target: 'http://localhost:3000',// 代理地址
+        changeOrigin: true// 是否改变代理地址
+      },
+      '/api': {
+        target: 'http://39.97.33.178',
+        changeOrigin: true
+      }
+    }
+  }
+}
+
+重启脚手架生效
+</code></pre></div><h3 id="axios"><a href="#axios" aria-hidden="true" class="header-anchor">#</a> axios</h3> <p>安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm i axios -S
+
+main.js
+import axios from 'axios'
+Vue.prototype.axios = axios;
+</code></pre></div><p>获取数据</p> <div class="language- extra-class"><pre class="language-text"><code>mounted () {
+    this.axios.get('/api/cityList').then((res) =&gt; {
+      console.log(res)
+    }).catch(() =&gt; {
+
+    })
+}
+</code></pre></div><p>数据分类</p> <div class="language- extra-class"><pre class="language-text"><code>1、数据格式
+formatCityList (cities) {
+      var cityList = [];
+      var hotList = [];
+
+      for (var i = 0; i &lt; cities.length; i++) {
+
+        // 获取数据的第一个字母同时转换成大写
+        var firstLetter = cities[i].py.substring(0, 1).toUpperCase();
+        if (toCom(firstLetter)) {// 新添加索引
+          cityList.push({ index: firstLetter, list: [{ nm: cities[i].nm, id: cities[i].id }] });
+
+        } else {// 累加索引
+          // console.log('累加')
+          for (var j = 0; j &lt; cityList.length; j++) {
+            if (cityList[j].index == firstLetter) {
+              cityList[j].list.push({ nm: cities[i].nm, id: cities[i].id })
+            }
+          }
+        }
+      }
+
+      function toCom (firstLetter) {
+        for (var i = 0; i &lt; cityList.length; i++) {
+          if (cityList[i].index === firstLetter) {
+            return false;
+          }
+        }
+        return true;
+      }
+}
+
+2、数据排序
+// 数据排序
+cityList.sort((n1, n2) =&gt; {
+   if (n1.index &gt; n2.index) {
+      return 1;
+   }
+   else if (n1.index &lt; n2.index) {
+      return -1;
+   }
+   else {
+      return 0;
+   }
+});
+报错：npm install --save core-js
+
+3、热门城市
+for (var i = 0; i &lt; cities.length; i++) {
+   if (cities[i].isHot === 1) {
+      hotList.push(cities[i]);
+   }
+}
+</code></pre></div><h3 id="数据渲染"><a href="#数据渲染" aria-hidden="true" class="header-anchor">#</a> 数据渲染</h3> <div class="language- extra-class"><pre class="language-text"><code>1、先定义data数据
+data () {
+    return {
+      cityList: [],
+      hotList: []
+    }
+  },
+  
+2、再通过v-for去渲染即可
+
+3、点击右侧拼音跳转到指定城市
+- 绑定事件
+&lt;li v-for=&quot;(item,index) in cityList&quot;
+    :key=&quot;item.index&quot;
+    @touchstart='handleIndex(index)'&gt;
+   {{item.index}}
+&lt;/li&gt;
+注意：touchstart指移动端触摸事件；
+- 获取城市组件中每项的h2标题滚动距离
+- 再通过给城市组件设置滚动距离来实现
+例：
+handleIndex (index) {
+      var h2 = this.$refs.city_sort.getElementsByTagName('h2');
+      this.$refs.city_sort.parentNode.scrollTop = h2[index].offsetTop;
+}
+</code></pre></div><h2 id="热映电影组件数据"><a href="#热映电影组件数据" aria-hidden="true" class="header-anchor">#</a> 热映电影组件数据</h2> <p>数据接口</p> <table><thead><tr><th>接口名称</th> <th>请求方式</th> <th>请求示列</th></tr></thead> <tbody><tr><td>正在热映</td> <td>get</td> <td><a href="http://39.97.33.178/api/movieOnInfoList?cityId=10" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/movieOnInfoList?cityId=10<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr> <tr><td>即将上映</td> <td>get</td> <td><a href="http://39.97.33.178/api/movieComingList?cityId=10" target="_blank" rel="noopener noreferrer">http://39.97.33.178/api/movieComingList?cityId=10<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></td></tr></tbody></table> <h3 id="请求数据"><a href="#请求数据" aria-hidden="true" class="header-anchor">#</a> 请求数据</h3> <div class="language- extra-class"><pre class="language-text"><code>this.axios.get('/api/movieOnInfoList?cityId=10').then((res) =&gt; {
+      console.log(res)
+      var msg = res.data.msg;
+      var data = res.data.data;
+      if (msg === 'ok') {
+        this.movieList = data.movieList;
+      }
+    })
+</code></pre></div><h3 id="数据渲染-2"><a href="#数据渲染-2" aria-hidden="true" class="header-anchor">#</a> 数据渲染</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;ul&gt;
+      &lt;li v-for=&quot;(item) in movieList&quot;
+          :key=&quot;item.id&quot;&gt;
+        &lt;div class=&quot;pic_show&quot;&gt;&lt;img :src=&quot;item.img&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;info_list&quot;&gt;
+          &lt;h2&gt;{{item.nm}}&lt;/h2&gt;
+          &lt;p&gt;观众评 &lt;span class=&quot;grade&quot;&gt;{{item.sc}}&lt;/span&gt;&lt;/p&gt;
+          &lt;p&gt;主演: {{item.star}}&lt;/p&gt;
+          &lt;p&gt;{{item.showInfo}}&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn_mall&quot;&gt;
+          购票
+        &lt;/div&gt;
+      &lt;/li&gt;
+&lt;/ul&gt;
+
+问题：
+	图片渲染不出来
+原因：
+	地址问题：http://p0.meituan.net/w.h/movie/f75fcb7696d55452e32794b2219700b9840805.jpg
+	w.h
+解决方式：使用过滤器
+++ filter
++++ index.js
+import Vue from &quot;vue&quot;;
+
+Vue.filter('setWH',(url,arg)=&gt;{
+  // 正则替换，将w.h替换成指定的arg
+  return url.replace(/w\.h/,arg);
+})
+主函数引入即可
+
+组件使用
+&lt;img :src=&quot;item.img | setWH('128.180')&quot;&gt;&lt;/div&gt;
+
+即将上映同理
+</code></pre></div><h2 id="搜索组件数据渲染"><a href="#搜索组件数据渲染" aria-hidden="true" class="header-anchor">#</a> 搜索组件数据渲染</h2> <p>​	最开始列表是没有数据的，需要通过搜索框调接口，进行异步数据渲染，所以需要定义一个data数据来通过watch监听数据。</p> <p>即：</p> <div class="language- extra-class"><pre class="language-text"><code>data () {
+    return {
+      message: '',
+      moviesList: []
+    }
+  },
+  watch: {
+    message (val) {
+      console.log(val)
+      this.axios.get('/api/searchList?cityId=10&amp;kw=a').then((res) =&gt; {
+        console.log(res)
+      })
+    }
+  },
+ 按数据渲染即可
+ 
+ 问题：watch数据是实时监控的，所以快速输入的时候涉及到接口多次请求问题
+ 优化：
+ 	函数防抖策略
+</code></pre></div><h3 id="函数防抖"><a href="#函数防抖" aria-hidden="true" class="header-anchor">#</a> 函数防抖</h3> <p>​	即，快速输入的时候只是针对最后一次去触发，而之前的要进行清除。不让之前的输入触发。</p> <p>1、原生定时器</p> <div class="language- extra-class"><pre class="language-text"><code>clearTimeout()
+setTimeout()
+意思就是，将请求放在setTimeout中，每次watch变化时先清除定时器，
+就能保证是最后一次触发
+</code></pre></div><p>2、axios本身的防抖策略</p> <div class="language- extra-class"><pre class="language-text"><code>axios终止多次请求
+watch: {
+    message (val) {
++      var that = this;
+      // 取消上一次请求
++      this.cancelRequest();
+
+      this.axios.get('/api/searchList?cityId=10&amp;kw=' + val, {
++       cancelToken: new this.axios.CancelToken(function executor (c) {
+          that.source = c;
+        })
+      }).then((res) =&gt; {
+        console.log(res.data.data)
+        var msg = res.data.msg;
+        var data = res.data.data;
+        if (msg === 'ok') {
+          this.moviesList = data.movies.list;
+        }
+      }).catch((err) =&gt; {
++        if (this.axios.isCancel(err)) {
+          console.log('Rquest canceled', err.message); //请求如果被取消，这里是返回取消的message
+        } else {
+          //handle error
+          console.log(err);
+        }
+      })
+    }
+  },
+  methods: {
+ +   cancelRequest () {
+      if (typeof this.source === 'function') {
+        this.source('终止请求')
+      }
+    },
+  }
+
+
+注意：ajax的abort()方法也可以
+</code></pre></div><h2 id="影院数据渲染"><a href="#影院数据渲染" aria-hidden="true" class="header-anchor">#</a> 影院数据渲染</h2> <p>数据请求</p> <div class="language- extra-class"><pre class="language-text"><code>mounted () {
+    this.axios.get('/api/cinemaList?cityId=10').then((res) =&gt; {
+      console.log(res)
+      var msg = res.data.msg;
+      var data = res.data.data;
+      if (msg === 'ok') {
+        this.cinemaList = data.cinemas;
+      }
+    })
+  }
+</code></pre></div><p>数据渲染</p> <div class="language- extra-class"><pre class="language-text"><code>主要是卡片渲染：
+&lt;div class=&quot;card&quot;&gt;
+          &lt;div v-for=&quot;(itemCar,key) in item.tag&quot;
+               :key=&quot;key&quot;
+               style=&quot;border:0;padding:0;margin:0&quot;&gt;
+            &lt;div v-if=&quot;itemCar==1&quot;
+                 :class=&quot;key | classCard&quot;&gt;
+              {{key | formatCard}}
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+映射：
+局部过滤器
+filters: {
+    // 过滤卡片名
+    formatCard (key) {
+      var card = {
+        'allowRefund': '改签',
+        'endorse': '退',
+        'sell': '折扣卡',
+        'snack': '小吃'
+      }
+      return card[key];
+    },
+    // 过滤卡片样式
+    classCard () {
+      var card = {
+        'allowRefund': 'bl',
+        'endorse': 'bl',
+        'sell': 'or',
+        'snack': 'or'
+      }
+      return card[key];
+    }
+  },
+</code></pre></div><h2 id="城市定位功能实现"><a href="#城市定位功能实现" aria-hidden="true" class="header-anchor">#</a> 城市定位功能实现</h2> <p>新建一个分支: git checkout-b getcCity</p> <p>问题1列表点击操作，选择什么事件？</p> <p>​	移动端一般选择 touchstart（一般不要选click，会有延时），但是 touchstart 在点击和滑动的时候都会触发。</p> <p>解决：使用tap事件。</p> <p>​	点击时候触发，滑动的时候不触发，但是vue没有tap事件，需要自己模拟。</p> <h3 id="模拟tap事件"><a href="#模拟tap事件" aria-hidden="true" class="header-anchor">#</a> 模拟tap事件</h3> <p>主要有以下几种方案：</p> <p>1、利用 touchstart 、 touchmove  、touchend来模拟；</p> <p>2、移动端zepto 也提供tap事件</p> <p>3、vue-touch</p> <p>4、利用better-scroll第三方模块也自带tap方法</p> <p>问题2滑动不流畅？</p> <p>几种解决方法：</p> <p>1、iscroll</p> <p>2、swiper</p> <p>3、better-scroll (对iscroll进行了二次封装)</p> <h3 id="better-scroll"><a href="#better-scroll" aria-hidden="true" class="header-anchor">#</a> better-scroll</h3> <p><a href="https://www.cnblogs.com/cangqinglang/p/8553746.html" target="_blank" rel="noopener noreferrer">参数方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>安装</p> <div class="language- extra-class"><pre class="language-text"><code>npm i better-scroll -S
+</code></pre></div><p>用法原理</p> <div class="language- extra-class"><pre class="language-text"><code>- 固定高度的盒子中套要滑动的组件
+
+在正在热映中先试验下功能
+import BScroll from 'better-scroll';
+
+// vue方法保证页面渲染完成之后触发
+this.$nextTick(() =&gt; {
+     // 两个参数：最外层容器，配置对象
+     new BScroll(this.$refs.movie_body, {
+         tap: true
+     });
+})
+
+注意：只有配置了tap，组建中绑定@tap事件才生效
+
+上拉加载和下拉刷新功能
+先配置：
+probeType: 1 
+// 1 滚动的时候会派发scroll事件，会截流。
+// 2 滚动的时候实时派发scroll事件，不会截流。 
+// 3 除了实时派发scroll事件，在swipe的情况下仍然能实时派发scroll事件
+
+再绑定事件
+// 拖拽滚动时触发
+scroll.on('scroll', () =&gt; {
+    console.log('scroll')
+})
+
+// 拖拽滚动结束后触发
+scroll.on('touchEnd', () =&gt; {
+    console.log('touchend')
+})
+</code></pre></div><h3 id="封装scroll组件"><a href="#封装scroll组件" aria-hidden="true" class="header-anchor">#</a> 封装Scroll组件</h3> <div class="language- extra-class"><pre class="language-text"><code>++ Scroll
++++ index.vue
+
+定义为全局组件
+mian.js中引入
+import Scroll from './components/Scroll'
+Vue.component('Scroll', Scroll)
+
+再在对应组建中将滑动内容包裹
+&lt;Scroll&gt;&lt;/Scroll&gt;
+
+传递方法过去即可，即将热映同理
+影院，城市
+城市组件中使用之后发现右侧字母点击跳转失效：
+
+scroll滚动组件中定义：
+methods: {
+    toScrollTop (y) {
+      this.scroll.scrollTo(0, y);
+    }
+  }
+city组件中改为：
+&lt;Scroll ref=&quot;city_List&quot;&gt;&lt;/Scroll&gt;
+this.$refs.city_List.toScrollTop(-h2[index].offsetTop);
+</code></pre></div><h3 id="封装loading组件"><a href="#封装loading组件" aria-hidden="true" class="header-anchor">#</a> 封装Loading组件</h3> <p><a href="https://codepen.io/anon/pen/GemNze" target="_blank" rel="noopener noreferrer">&lt;动画地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- extra-class"><pre class="language-text"><code>同样注册为全局组件
+与滚动组件联合使用
+&lt;Loading v-if=&quot;isLoading&quot;&gt;&lt;/Loading&gt;
+&lt;Scroll v-else
+        :handleToScroll=&quot;handleToScroll&quot;
+        :handleToTouchEnd=&quot;handleToTouchEnd&quot;&gt;
+&lt;/Scroll&gt;
+</code></pre></div><h2 id="当前城市本地存储与状态管理"><a href="#当前城市本地存储与状态管理" aria-hidden="true" class="header-anchor">#</a> 当前城市本地存储与状态管理</h2> <h3 id="本地存储"><a href="#本地存储" aria-hidden="true" class="header-anchor">#</a> 本地存储</h3> <p>​	二次刷新后直接从本地存储中取值，如果有值，就不再发送请求</p> <h3 id="vuex状态管理"><a href="#vuex状态管理" aria-hidden="true" class="header-anchor">#</a> VueX状态管理</h3> <div class="language- extra-class"><pre class="language-text"><code>模块拆分拓展
+const state = {
+    nm: window.localStorage.getItem('nowNm') || '北京',
+    id: window.localStorage.getItem('nowId') || 1
+};
+const actions = {
+};
+const mutations = {
+    CITY_INFO (state, payload) {
+        state.nm = payload.nm;
+        state.id = payload.id;
+    }
+};
+export default {
+    namespaced: true,
+    state,
+    actions,
+    mutations
+}
+取用：
+&lt;span&gt;{{$store.state.city.nm}}&lt;/span&gt;
+</code></pre></div><h3 id="点击城市"><a href="#点击城市" aria-hidden="true" class="header-anchor">#</a> 点击城市</h3> <div class="language- extra-class"><pre class="language-text"><code>handleToCity(nm,id){
+	 // 更新选中城市
+     this.$store.commit('city/CITY_INFO',{ nm , id });
+     // 存储选中城市
+     window.localStorage.setItem('nowNm',nm);
+     window.localStorage.setItem('nowId',id);
+     // 选择完城市后，返回正在热映
+     this.$router.push('/movie/nowPlaying');
+}
+</code></pre></div><h3 id="当前城市关联"><a href="#当前城市关联" aria-hidden="true" class="header-anchor">#</a> 当前城市关联</h3> <div class="language- extra-class"><pre class="language-text"><code>生命周期activated()：组件激活时调用
+activated()替换mounted()
+
+问题：如果没有改变城市，只是切换页面，那么不应该做在这个生命周期函数中执行ajax请求。
+解决方式
+- data中新增pevCityId: -1
+- 然后请求之前从vuex中取数据
+- 在请求成功之后，给pevCityId赋值
+- 再到请求之前判断pevCityId是否和vuex中cityid一样
+- 如果一样则不再进行请求
+
+即将上映、影院和搜索同理
+注意：
+- 搜索组件不需要重新判断城市，因为每次都是异步渲染的
+</code></pre></div><h3 id="定位当前城市"><a href="#定位当前城市" aria-hidden="true" class="header-anchor">#</a> 定位当前城市</h3> <h4 id="js弹窗组件"><a href="#js弹窗组件" aria-hidden="true" class="header-anchor">#</a> js弹窗组件</h4> <div class="language- extra-class"><pre class="language-text"><code>js模式组件
++ JS
++ index.js
++  MessageBox
+++ index.vue
+
+
+重点inde.js
+import Vue from 'vue';
+import MessageBox from './MessageBox';
+
+export var messageBox = (function () {
+
+    return function (opts) {  //配置参数
+
+        var defaults = {   //默认值
+            title: '',
+            content: '',
+            cancel: '',
+            ok: '',
+            // 取消和确认方法也在此定义
+            handleCancel: null,
+            handleOk: null
+        };
+
+        // 把MessageBox结合到vue中
+        var MyComponent = Vue.extend(MessageBox);
+
+        // 拿到配置参数
+        for (var attr in opts) {
+            defaults[attr] = opts[attr];
+        }
+
+        // 新建中间件VM实例
+        var vm = new MyComponent({
+            el: document.createElement('div'),
+            data: {
+                title: defaults.title,
+                content: defaults.content,
+                cancel: defaults.cancel,
+                ok: defaults.ok
+            },
+            methods: {
+                // 取消
+                handleCancel () {
+                    defaults.handleCancel &amp;&amp; defaults.handleCancel.call(this);
+                    // 移除vm
+                    document.body.removeChild(vm.$el);
+                },
+                handleOk () {
+                    defaults.handleOk &amp;&amp; defaults.handleOk.call(this);
+                    // 移除vm
+                    document.body.removeChild(vm.$el);
+                }
+            }
+        });
+
+        // 添加到body
+        document.body.appendChild(vm.$el);
+
+    };
+
+})();
+
+
+在movie中调用
+import { messageBox } from '@/components/JS';
+
+setTimeout(() =&gt; {
+      this.axios.get('/api/getLocation').then((res) =&gt; {
+        var msg = res.data.msg;
+        console.log(msg)
+        if (msg === 'ok') {
+          var nm = res.data.data.nm;
+          var id = res.data.data.id;
+          if (this.$store.state.city.id == id) { return; }
+          messageBox({
+            title: '定位',
+            content: nm,
+            cancel: '取消',
+            ok: '切换定位',
+            handleOk () {
+              window.localStorage.setItem('nowNm', nm);
+              window.localStorage.setItem('nowId', id);
+              // 刷新页面
+              window.location.reload();
+            }
+          });
+        }
+      });
+    }, 3000);
+</code></pre></div><h2 id="电影详情页组件"><a href="#电影详情页组件" aria-hidden="true" class="header-anchor">#</a> 电影详情页组件</h2> <h3 id="基本布局"><a href="#基本布局" aria-hidden="true" class="header-anchor">#</a> 基本布局</h3> <div class="language- extra-class"><pre class="language-text"><code>不属于公共组件，所以放在Movie下
+detail.vue
+
+路由引用：
+</code></pre></div><h3 id="路由高级用法"><a href="#路由高级用法" aria-hidden="true" class="header-anchor">#</a> 路由高级用法</h3> <h4 id="命名视图"><a href="#命名视图" aria-hidden="true" class="header-anchor">#</a> <a href="https://router.vuejs.org/zh/guide/essentials/named-views.html" target="_blank" rel="noopener noreferrer">命名视图<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <p>​	有时候想同时 (同级) 展示多个视图，而不是嵌套展示，例如创建一个布局，有 <code>sidebar</code> (侧导航) 和 <code>main</code> (主内容) 两个视图，这个时候命名视图就派上用场了。你可以在界面中拥有多个单独命名的视图，而不是只有一个单独的出口。如果 <code>router-view</code> 没有设置名字，那么默认为 <code>default</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;TabBar&gt;&lt;/TabBar&gt;
+// 同级命名路由
+&lt;router-view name='detail' /&gt;
+
+路由设置
+{
+    path: 'detail',
+    components: {
+         detail: () =&gt; import('@/views/Movie/detail')
+    }
+}
+</code></pre></div><h3 id="详情页返回列表"><a href="#详情页返回列表" aria-hidden="true" class="header-anchor">#</a> 详情页返回列表</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;Header title=&quot;影片详情&quot;&gt;
+    &lt;i class=&quot;iconfont icon-right&quot; @touchstart=&quot;handleToBack&quot;&gt;&lt;/i&gt;
+&lt;/Header&gt;
+
+methods : {
+    handleToBack(){
+       // 后退
+       this.$router.back();
+    }
+},
+</code></pre></div><h3 id="进入详情"><a href="#进入详情" aria-hidden="true" class="header-anchor">#</a> 进入详情</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;pic_show&quot; @tap=&quot;handleToDetail(item.id)&quot;&gt;
+
+handleToDetail(movieId){
+     //console.log(movieId);
+     this.$router.push('/movie/detail/1/' + movieId);
+},
+
+动态路由传值：
+{
+   path: 'detail/:movieId',
+   components: {
+       detail: () =&gt; import('@/views/Movie/detail')
+   }
+},
+
+取值：
+方式1：var detaiId = this.$route.params.movieId;
+方式2：路由组件传值
+首先配置路由；
+{
+            path: 'detail/:movieId',
+            components: {
+                detail: () =&gt; import('@/views/Movie/detail')
+            },
+            props: {
+                detail: true
+            }
+},
+组件中可以通过props取用
+props: ['movieId'],
+  mounted () {
+    // var detaiId = this.$route.params.movieId;
+    console.log(this.movieId)
+  }
+</code></pre></div><h3 id="动画效果"><a href="#动画效果" aria-hidden="true" class="header-anchor">#</a> 动画效果</h3> <div class="language- extra-class"><pre class="language-text"><code>路由添加transition特效
+https://router.vuejs.org/zh/guide/advanced/transitions.html#%E5%8D%95%E4%B8%AA%E8%B7%AF%E7%94%B1%E7%9A%84%E8%BF%87%E6%B8%A1
+
+官网方式苹果手机会多执行一遍
+
+使用原生方式在详情页去实现
+ &lt;div id=&quot;detailContrainer&quot;
+       class=&quot;slide-enter-active&quot;&gt;
+ &lt;/div&gt;
+ 
+ #detailContrainer.slide-enter-active{ animation:.3s slideMove;}
+@keyframes slideMove{
+    0%{ transform : translateX(100%); }
+    100%{ transform : translateX(0); }
+}
+</code></pre></div><h3 id="解决路由不匹配问题"><a href="#解决路由不匹配问题" aria-hidden="true" class="header-anchor">#</a> 解决路由不匹配问题</h3> <div class="language- extra-class"><pre class="language-text"><code>{
+            path: 'detail/2/:movieId',
+            components: {
+                default: () =&gt; import('@/components/NowPlaying'),
+                detail: () =&gt; import('@/views/Movie/detail')
+            },
+            props: {
+                detail: true
+            }
+},
+{
+            path: 'detail/2/:movieId',
+            components: {
+                default: () =&gt; import('@/components/ComingSoon'),
+                detail: () =&gt; import('@/views/Movie/detail')
+            },
+            props: {
+                detail: true
+            }
+},
+</code></pre></div><p>功能基本完成，即将上映组件同理</p> <h3 id="数据渲染-3"><a href="#数据渲染-3" aria-hidden="true" class="header-anchor">#</a> 数据渲染</h3> <p>轮播图</p> <div class="language- extra-class"><pre class="language-text"><code>背景图：
+&lt;div class=&quot;detail_list_bg&quot;
+             :style=&quot;{ 'background-image' : 'url('+ detailMovie.img.replace(/w\.h/,'148.208') +')' }&quot;&gt;&lt;/div&gt;
+
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;%= BASE_URL %&gt;libs/swiper-4.1.0.min.css&quot;&gt;
+&lt;script src=&quot;&lt;%= BASE_URL %&gt;libs/swiper-4.1.0.min.js&quot;&gt;&lt;/script&gt;
+</code></pre></div><h2 id="项目部署"><a href="#项目部署" aria-hidden="true" class="header-anchor">#</a> 项目部署</h2> <p>打包细节：</p> <p>1、路由index.js</p> <div class="language- extra-class"><pre class="language-text"><code>base:&quot;miaomiao&quot;// 文件夹名
+
+就会自动http://localhost:8080/miaomiao/movie/nowPlaying
+</code></pre></div><p>2、静态资源路径</p> <div class="language- extra-class"><pre class="language-text"><code>vue.config.js
+publicPath: '/miaomiao'
+与devServer同级
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/gangking/myBlog/edit/master/docs/vue/01.md" target="_blank" rel="noopener noreferrer">编辑文档</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019-8-17 23:44:51</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/PersonalBlog/vue/" class="prev router-link-active">
+          介绍
+        </a></span> <span class="next"><a href="/PersonalBlog/vue/02.html">
+          项目开发心得
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/PersonalBlog/assets/js/app.9b43270b.js" defer></script><script src="/PersonalBlog/assets/js/2.c03f67b8.js" defer></script><script src="/PersonalBlog/assets/js/35.181ad55d.js" defer></script>
+  </body>
+</html>

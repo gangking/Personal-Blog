@@ -1,0 +1,13 @@
+{
+    "name": "武人熊大大",
+    "short_name": "IT江湖路",
+    "description": "武人熊大大的VuePress文档",
+    "icons": [{
+      "src": "./avatar.jpg",
+      "sizes": "144x144",
+      "type": "image/jpg"
+    }],
+    "background_color":"#2196f3",
+    "display":"standalone",
+    "start_url":"index.html"
+  }
